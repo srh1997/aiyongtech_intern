@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Todo from './todo'
+import Todo from './Todo'
 
-const TodoList=(todos,onTodoClick)=>(
+const Todolist=({todos, onTodoClick})=>(
     <ul>
         {
             todos.map((todo,index)=>(
@@ -10,4 +10,6 @@ const TodoList=(todos,onTodoClick)=>(
             ))
         }
     </ul>
-)
+);
+
+export default Todolist;
